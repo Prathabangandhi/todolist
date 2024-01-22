@@ -1,0 +1,251 @@
+:root {
+    --bg-color--100: rgb(34, 31, 31);
+    --bg-color--50: rgb(80, 77, 77);
+    --text-color--100: rgb(255, 255, 255);
+    --text-color--50: rgb(212, 206, 206);
+}
+
+* {
+
+    letter-spacing: 2px;
+}
+
+body {
+    background: linear-gradient(to right, rgb(105, 102, 102), rgb(77, 65, 65), rgb(105, 102, 102));
+}
+
+.to_do {
+    padding: 5px;
+
+    margin-top: 30px;
+    background: linear-gradient(to bottom, rgb(82, 78, 78), rgb(92, 84, 84));
+}
+
+.row {
+    margin-top: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/*====================clock=====================*/
+#clock {
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    top: 40px;
+    color: var(--text-color--100);
+}
+
+#datee {
+    position: absolute;
+    right: 15px;
+    font-size: 20px;
+    top: 65px;
+    color: var(--text-color--100);
+}
+
+.addeven {
+    flex: 0 0 47.5%;
+    position: relative;
+    margin: 11px;
+    max-width: 47.5%;
+    background-color: var(--bg-color--100);
+    border: 1px solid rgb(116, 110, 110);
+    padding: 5px;
+}
+
+.showeven {
+    margin: 11px;
+    padding: 5px;
+    position: relative;
+    flex: 0 0 47%;
+    max-width: 47%;
+    background-color: var(--bg-color--100);
+    border: 1px solid rgb(116, 110, 110);
+}
+
+.addeven .head,
+.showeven .head {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    color: var(--text-color--100);
+    justify-content: center;
+    align-items: center;
+}
+
+.addeven .field {
+    margin-top: 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    background: var(--bg-color--50);
+
+
+}
+
+.addeven .field .title {
+    text-align: center;
+    margin: 0 5px;
+    flex: 0 0 48%;
+    max-width: 48%;
+    color: white;
+
+}
+
+.addeven .field .inpu {
+    margin: 0 5px;
+    flex: 0 0 48%;
+    max-width: 48%;
+
+}
+
+.addeven .field .inpu input {
+    margin-top: 10px;
+    width: 95%;
+    height: 30px;
+    font-size: 20px;
+}
+
+.addeven .field .inpu textarea {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--bg-color--100);
+    width: 95%;
+    height: 100px;
+}
+
+.emp,
+.btn {
+    margin-top: 20px;
+    flex: 50%;
+    max-width: 50%;
+    height: 50px;
+    margin-bottom: 20px;
+
+}
+
+.btn {
+    background-color: aqua;
+    transition: all 0.3s ease-in-out;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    background-color: green;
+}
+
+.header h1 {
+
+    text-align: center;
+    background: linear-gradient(to right, red, yellow, green, blue);
+}
+
+footer {
+    text-align: center;
+    color: var(--text-color--100);
+}
+
+footer span {
+    margin-left: 20px;
+    color: aqua;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style on Ul*/
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    margin: 5px;
+    flex: 0 0 98.5%;
+    max-width: 98.5%;
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    /*  unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color  */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+
+ul li:hover {
+    background: #ddd;
+
+}
+
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+.close {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 16px 12px 16px;
+
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+@media (max-width:996px) {
+
+    .addeven,
+    .showeven {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .addeven .field .title,
+    .addeven .field .inpu {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+
+}

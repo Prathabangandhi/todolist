@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to_do_list.com</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+
+        <h1>TO DO LIST</h1>
+
+    </div>
+    <p id="clock">8:10:45</p>
+    <p id="datee"></p>
+    <div class="to_do">
+        <div class="row">
+            <div class="addeven">
+                <div class="row">
+                    <div class="head">
+                        <h1>To Add An Event</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <div class="row">
+                            <div class="title">
+                                <h3>Title</h3>
+                            </div>
+                            <div class="inpu"><input type="text" name="" id="title" size="20px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <div class="row">
+                            <div class="title">
+                                <h3>Date & Time</h3>
+                            </div>
+                            <div class="inpu"><input type="date" name="" id="date" size="20px"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="field">
+                        <div class="row">
+                            <div class="title">
+                                <h3>Descriptions</h3>
+                            </div>
+                            <div class="inpu"><textarea name="" id="descrip" size=""></textarea></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="emp"></div>
+                    <button class="btn" onClick="newElement()"> Add Event</button>
+
+                </div>
+
+            </div>
+            <div class="showeven">
+                <div class="row">
+                    <div class="head">
+                        <h1>To Do LIST</h1>
+                    </div>
+                    <div class="events">
+                        <ul id="myUL">
+                            <li>
+                                <div>
+                                    <h4>Title : My Birthday </h4>
+                                    <h5>Date & Time : 18/05/2002</h5>
+                                    <h5>Description : siva siva siva siva siva siva siva siva siva siva siva</h5>
+                                </div>
+                            </li>
+                            <li class="checked">
+                                <div>
+                                    <h4>Title : Pongal Day </h4>
+                                    <h5>Date & Time : 12/01/2024</h5>
+                                    <h5>Description : Gandhipathy Tulsi Jain Engineering College</h5>
+                                </div>
+                            </li>
+                            <!--li >
+                                <div><h4>Tiitle : gym </h4> 
+                                    <h5>Date & Time : 18/05/2002</h5>
+                                    <h5>Description : siva siva</h5></div>
+                            </li>
+                            <li>
+                                <div><h4>Tiitle : gym</h4> 
+                                    <h5>Date & Time : 18/05/2002</h5>
+                                    <h5>Description : siva siva</h5></div>
+                            </li-->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>&copy;All Rights Reserved By<span>Prathaban</span></footer>
+
+    
+</body>
+<script src="script/script.js" ></script>
+</html>
